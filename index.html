@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Secret Valentine ❤️</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: black;
+}
+
+/* PASSWORD PAGE */
+#lock {
+    height: 100vh;
+    background: linear-gradient(to bottom right, #ff5f6d, #ffc371);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lock-box {
+    background: rgba(255,255,255,0.2);
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    width: 90%;
+    max-width: 350px;
+}
+
+input {
+    padding: 10px;
+    width: 80%;
+    border-radius: 20px;
+    border: none;
+    margin-top: 10px;
+    text-align: center;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px 22px;
+    border-radius: 25px;
+    border: none;
+    background: #ff2e63;
+    color: white;
+    font-size: 1rem;
+}
+
+/* SLIDESHOW PAGE */
+#main {
+    display: none;
+    height: 100vh;
+    position: relative;
+}
+
+.slideshow img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1.5s;
+}
+
+.slideshow img.active {
+    opacity: 2;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.card {
+    background: rgba(255,255,255,0.15);
+    padding: 25px;
+    border-radius: 20px;
+    max-width: 400px;
+    backdrop-filter: blur(8px);
+}
+
+/* MESSAGE PAGE */
+#messagePage {
+    display: none;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #ff758c, #ff7eb3);
+    color: white;
+    padding: 30px 20px;
+}
+
+.message-box {
+    background: rgba(255,255,255,0.15);
+    padding: 25px;
+    border-radius: 20px;
+    max-width: 600px;
+    margin: auto;
+    line-height: 1.7;
+}
+
+h1 {
+    text-align: center;
+}
+</style>
+</head>
+
+<body>
+
+<!-- PASSWORD PAGE -->
+<div id="lock">
+    <div class="lock-box">
+        <h2>🔒 Secret Love</h2>
+        <p>Enter our love code</p>
+        <input type="password" id="pass">
+        <br>
+        <button onclick="checkPassword()">Unlock ❤️</button>
+        <p id="error"></p>
+    </div>
+</div>
+
+<!-- SLIDESHOW PAGE -->
+<div id="main">
+
+    <div class="slideshow">
+        <img src="C:\Users\oviya\OneDrive\Desktop\valentine\index.html\photo1.jpg.jpg" class="active">
+        <img src="C:\Users\oviya\OneDrive\Desktop\valentine\index.html\photo2.jpg.jpg">
+        <img src="C:\Users\oviya\OneDrive\Desktop\valentine\index.html\photo3.jpg.jpg">
+        <img src="C:\Users\oviya\OneDrive\Desktop\valentine\index.html\photo4.jpg.jpg">
+    </div>
+
+    <div class="overlay">
+        <div class="card">
+            <h1> Happy Valentine PAHHH 💗 </h1>
+            <p id="text">
+                 <b>PAAHHHHHHH</b>,<br><br>
+                Tap below 🤏
+            </p>
+            <button onclick="showLove()">TAP TO HEAR OUR LOVE🎶</button><br>
+            <button onclick="openMessage()">tap to Read OUR LOVE 🥹</button>
+        </div>
+    </div>
+
+    <audio id="music" loop>
+        <source src="C:\Users\oviya\OneDrive\Desktop\valentine\index.html\song.mp3.m4r" type="audio/mpeg">
+    </audio>
+
+</div>
+
+<!-- MESSAGE PAGE -->
+<div id="messagePage">
+    <div class="message-box">
+        <h1>💗 Heyy MY MANNNN !! This is for yewww </h1>
+
+        <!-- ✍️ EDIT YOUR MESSAGE BELOW -->
+        <p>
+        Dear <b>PATTUUUUUUU</b>,<br><br>
+
+        Heart opens for yewww with a happy tears in my eyes 🥹!!! On 20 SEP you came into my life unexpectedly but ipo you are only my special person who makes me more happiee and sad.Heyyyy mann it's all ok🫂 !! "SORRYY" for everything Naa unna rombaaa hurt pannirukenn but nee enakagaa ellathayum thaangikuraaa ❤️‍🩹!! Yewww have done more and moree only for mee. Naa unkuda irukum bothuu romba safe ahh feel pandren but i don't know whyyy 🤔!! Naama eppavum idhey pola sandaa pottutu neraya romance pannitu nee enna nose cut pannitu lotzz of happiness oda ippdiyehh irupommm !!🫴 Heyy man enna vara vara romba busy yahh work la concentrate pandringala OK enakuu purithu aana neenga enna vida work ku importance kudukuradhuu kjm possess aaguthu 😒 But ok daa naa seekiroo purinjipen nee work la focus pannu Naanu unkuda unaku torture kudukama iruka try pandren !!!May be nee soldra maari vayasuu kolaruu enakuu !! but it all ok enaku unmela eppavum kovam varadhu mann nee enna pannaluu!!! PAHHH Enaku ungakita recently pudichadhu unga alagana kovammm becozz neenga sanda potu enna thittum bothu "endii ipdii panni thituvangura" nu paavuma love oda care oda enkita pesi kovatha thuki potu enakaga vandhu pesuvingaa pahhh 💋 Onnu mattu nyabagam irukattum you are my always first priority I do whatever you want !! Briyaaniii yehh senji kuduka maaten nu sonnana enga v2la ellarum thakkali sapadula chicken poduvanga but muslim briyanii something special so kandipaa seekiram secrets ketuu kjm love mix panni senjii kudukuren mannn !!! 😘I promisely said yeww that YOU ARE MY IMPORTANT AND SPECIAL PERSON AS "MY PARTNER" naa enkita iruka ellathayum yaaru ketalum kuduthuruven BUT Unna yaarkitayum vittu kuduka maaten "MY PROPERTY" 💗 <br><br>
+
+        These photos are not just pictures — they are memories I hold close to my heart.
+         Enaku unkita onne onnu kekanum !! Idhellam padichu mudichituu Enakagaa "I LUV YEWWWWW DII PATTUUU" nu solluvingala🤌 <br><br>
+
+        Thank you for staying with me.<br>
+        Thank you for loving me.<br><br>
+
+        Forever yours,<br>
+        <b>KANMANIII</b> 💗
+        </p>
+
+    </div>
+</div>
+
+<script>
+const PASSWORD = "US0422";
+
+/* PASSWORD CHECK */
+function checkPassword() {
+    let input = document.getElementById("pass").value;
+    if (input === PASSWORD) {
+        document.getElementById("lock").style.display = "none";
+        document.getElementById("main").style.display = "block";
+    } else {
+        document.getElementById("error").innerText = "Wrong password 💔";
+    }
+}
+
+/* SLIDESHOW */
+let slides = document.querySelectorAll(".slideshow img");
+let index = 0;
+
+setInterval(() => {
+    slides[index].classList.remove("active");
+    index = (index + 1) % slides.length;
+    slides[index].classList.add("active");
+}, 3500);
+
+/* MUSIC + MESSAGE */
+function showLove() {
+    document.getElementById("text").innerHTML =
+        "FOREVER TOGETHER WITH THIS EXTRA CUTENESS 🫂💓";
+    document.getElementById("music").play();
+}
+
+/* OPEN LETTER PAGE */
+function openMessage() {
+    document.getElementById("main").style.display = "none";
+    document.getElementById("messagePage").style.display = "block";
+}
+</script>
+
+</body>
+</html>
